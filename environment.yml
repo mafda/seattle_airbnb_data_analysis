@@ -1,0 +1,12 @@
+name: seattle_airbnb
+channels:
+  - anaconda
+  - conda-forge
+dependencies:
+  - jupyter=1.0.0
+  - matplotlib=3.8.0
+  - numpy=1.26.0
+  - pandas=2.1.1
+  - python=3.11.5
+  - scikit-learn=1.2.2
+  - seaborn=0.12.2
