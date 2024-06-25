@@ -68,15 +68,45 @@ The dataset is divided into three main files:
 ## Metodology
 
 This project will follow [CRoss Industry Standard Process for Data Mining -
-CRISP-DM](https://en.wikipedia.org/wiki/Cross-industry_standard_process_for_data_mining).
+CRISP-DM](https://en.wikipedia.org/wiki/Cross-industry_standard_process_for_data_mining)
+methodology.
 
-What is expected to be achieved with the analysis of the **Airbnb dataset in
-Seattle**? Some possible objectives may be:
+### Key Highlights
 
-- **Q1. Identify temporal patterns in reserves and prices.**
-- **Q2. Evaluate customer satisfaction based on reviews.**
-- **Q3. Determine factors that influence property prices.**
-- **Q4. Analyze the demand and occupancy of properties.**
+- **Business Understanding**: Identify the key business questions, such as factors
+  influencing occupancy rates, pricing strategies, and customer satisfaction.
+
+- **Data Understanding**: Explore the structure and content of the dataset,
+  including listings.csv, calendar.csv, and reviews.csv. Summarize the key
+  attributes and their significance.
+
+- **Data Preparation**: Clean and preprocess the data by handling missing values,
+  converting data types, and normalizing text reviews. This step includes
+  filtering non-English reviews for consistent sentiment analysis.
+
+- **Modeling**: Apply statistical and machine learning models to analyze trends in
+  occupancy rates, pricing, and sentiment from reviews. Use visualization
+  techniques to illustrate temporal patterns and relationships.
+
+- **Evaluation**: Assess the findings to ensure they address the initial business
+  questions. Validate the models and analysis results for accuracy and
+  reliability.
+
+- **Deployment**: Document the insights and recommendations based on the analysis.
+  Provide actionable strategies for optimizing listings, pricing, and improving
+  customer experience.
+
+## Findings
+
+- **Occupancy Rates**: Identified seasonal patterns with peaks in January and July.
+  Occupancy rates increased from March to July 2016, followed by a decline until
+  January 2017.
+- **Pricing Trends**: Prices showed a corresponding increase during high occupancy
+  periods, peaking in July 2016. A slight decrease was observed from August to
+  November 2016, with stability through January 2017.
+- **Customer Satisfaction**: High levels of customer satisfaction were observed,
+  with 97% positive reviews. Common positive keywords included "great," "clean,"
+  "location," and "comfortable."
 
 ## References
 
