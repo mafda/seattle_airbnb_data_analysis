@@ -105,7 +105,7 @@ indicates a seasonal trend with peaks in winter (January) and summer (July),
 followed by gradual decreases. This correlation suggests that higher occupancy
 rates, likely driven by seasonal demand, are associated with higher prices.
 
-![](../seattle_airbnb_data_analysis/assets/q1.png)
+![](./assets/q1.png)
 
 ### Determine factors that influence property prices.
 
@@ -116,7 +116,7 @@ bedrooms, accommodation capacity and number of guests included. This suggests
 that these factors are key determinants of listing prices, with larger,
 better-reviewed properties tending to command higher prices.
 
-![](../seattle_airbnb_data_analysis/assets/q2.png)
+![](./assets/q2.png)
 
 ### Evaluate customer satisfaction based on reviews
 
@@ -127,7 +127,7 @@ of the accommodations. The analysis shows that customer satisfaction is
 overwhelmingly positive, with a few areas for improvement in handling
 multilingual reviews.
 
-![](../seattle_airbnb_data_analysis/assets/q3.png)
+![](./assets/q3.png)
 
 ## Data Modeling
 
@@ -144,7 +144,7 @@ Although the model has a reasonable level of predictive ability, an R² of **0.5
   missing or that the model is not complex enough to capture all relationships
   present in the data.
 
-![Actual vs Predicted Prices](../seattle_airbnb_data_analysis/assets/actual_predicted_prices.png)
+![Actual vs Predicted Prices](./assets/actual_predicted_prices.png)
 
 | Cost                      | Result |
 | ------------------------- | ------ |
