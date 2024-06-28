@@ -116,7 +116,7 @@ bedrooms, accommodation capacity and number of guests included. This suggests
 that these factors are key determinants of listing prices, with larger,
 better-reviewed properties tending to command higher prices.
 
-![](./assets/q2.png)
+![](./assets/corr_matrix.png)
 
 ### Evaluate customer satisfaction based on reviews
 
