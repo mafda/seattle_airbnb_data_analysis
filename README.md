@@ -73,40 +73,83 @@ methodology.
 
 ### Key Highlights
 
-- **Business Understanding**: Identify the key business questions, such as factors
-  influencing occupancy rates, pricing strategies, and customer satisfaction.
+- **Business Understanding**: Identify the key business questions, such as
+  factors influencing occupancy rates, pricing strategies, and customer
+  satisfaction.
 
 - **Data Understanding**: Explore the structure and content of the dataset,
-  including listings.csv, calendar.csv, and reviews.csv. Summarize the key
-  attributes and their significance.
+  including listings.csv, calendar.csv, and reviews.csv.
 
-- **Data Preparation**: Clean and preprocess the data by handling missing values,
-  converting data types, and normalizing text reviews. This step includes
-  filtering non-English reviews for consistent sentiment analysis.
+- **Data Preparation**: Clean and pre-process the data by handling missing
+  values and converting data types.
 
-- **Modeling**: Apply statistical and machine learning models to analyze trends in
-  occupancy rates, pricing, and sentiment from reviews. Use visualization
-  techniques to illustrate temporal patterns and relationships.
+- **Modeling**: Apply statistical and machine learning models to analyze the
+  linear relationship between features and price. Use visualization techniques
+  to illustrate the relationships.
 
-- **Evaluation**: Assess the findings to ensure they address the initial business
-  questions. Validate the models and analysis results for accuracy and
+- **Evaluation**: Validate the models and analysis results for accuracy and
   reliability.
 
-- **Deployment**: Document the insights and recommendations based on the analysis.
-  Provide actionable strategies for optimizing listings, pricing, and improving
-  customer experience.
+- **Deployment**: Document the insights and recommendations based on the
+  analysis. Provide actionable strategies for optimizing listings, pricing, and
+  improving customer experience.
 
 ## Findings
 
-- **Occupancy Rates**: Identified seasonal patterns with peaks in January and July.
-  Occupancy rates increased from March to July 2016, followed by a decline until
-  January 2017.
-- **Pricing Trends**: Prices showed a corresponding increase during high occupancy
-  periods, peaking in July 2016. A slight decrease was observed from August to
-  November 2016, with stability through January 2017.
-- **Customer Satisfaction**: High levels of customer satisfaction were observed,
-  with 97% positive reviews. Common positive keywords included "great," "clean,"
-  "location," and "comfortable."
+Some exploratory analysis.
+
+### Identify temporal patterns in reserves and prices
+
+The analysis reveals a relationship between occupancy rates and prices. This
+indicates a seasonal trend with peaks in winter (January) and summer (July),
+followed by gradual decreases. This correlation suggests that higher occupancy
+rates, likely driven by seasonal demand, are associated with higher prices.
+
+![](../seattle_airbnb_data_analysis/assets/q1.png)
+
+### Determine factors that influence property prices.
+
+The correlation matrix shows that there is a high correlation between price and
+review-related variables (such as number of reviews and review score).
+Significant correlations are also observed with the number of bathrooms, beds,
+bedrooms, accommodation capacity and number of guests included. This suggests
+that these factors are key determinants of listing prices, with larger,
+better-reviewed properties tending to command higher prices.
+
+![](../seattle_airbnb_data_analysis/assets/q2.png)
+
+### Evaluate customer satisfaction based on reviews
+
+The most frequently used words in user reviews were "great," "clean,"
+"location," and "comfortable." These keywords suggest that customers generally
+had positive experiences and appreciated the cleanliness, location, and comfort
+of the accommodations. The analysis shows that customer satisfaction is
+overwhelmingly positive, with a few areas for improvement in handling
+multilingual reviews.
+
+![](../seattle_airbnb_data_analysis/assets/q3.png)
+
+## Data Modeling
+
+**Linear Regression** is a simple model that attempts to capture the linear
+relationship between **features and price**.
+- Pros: Easy to interpret and quick to train.
+- Cons: May not capture complex relationships between variables.
+
+### Results
+
+Although the model has a reasonable level of predictive ability, an R² of **0.558**
+  also suggests that there is **44.2%** of the variability that is not being
+  captured by the model, indicating that some important features could be
+  missing or that the model is not complex enough to capture all relationships
+  present in the data.
+
+![Actual vs Predicted Prices](../seattle_airbnb_data_analysis/assets/actual_predicted_prices.png)
+
+| Cost                      | Result |
+| ------------------------- | ------ |
+| Mean Absolute Error (MAE) | 38.09  |
+| R² Score                  | 0.55   |
 
 ## References
 
