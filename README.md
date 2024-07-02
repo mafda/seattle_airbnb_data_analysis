@@ -149,7 +149,18 @@ Although the model has a reasonable level of predictive ability, an R² of **0.5
 | Cost                      | Result |
 | ------------------------- | ------ |
 | Mean Absolute Error (MAE) | 38.09  |
-| R² Score                  | 0.55   |
+| R² Score                  | 0.558  |
+
+## Analysis of Results and Conclusions
+
+Although the model has a reasonable level of predictive ability, an R² of 0.558 also suggests that there is 44.2% of the variability that is not being captured by the model, indicating that some important features could be missing or that the model is not complex enough to capture all relationships present in the data.
+
+For a detailed analysis of the results obtained, visit our [Medium
+blog](https://medium.com/@mafda/seattle-airbnb-data-analysis-a-data-driven-journey-with-crisp-dm-for-data-scientists-b66b5672c617).
+Here you will find a comprehensive explanation of the findings and their
+interpretation in the context of the Seattle Airbnb data analysis.
+
+> [Seattle Airbnb: Temporal Trends, Price Influences, and Customer Satisfaction Analysis.](https://medium.com/@mafda/seattle-airbnb-data-analysis-a-data-driven-journey-with-crisp-dm-for-data-scientists-b66b5672c617)
 
 ## References
 
